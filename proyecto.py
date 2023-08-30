@@ -1,4 +1,3 @@
-import pandas as pd
 from colorama import Fore, Style
 
 v_total = 0
@@ -30,7 +29,6 @@ while(index==0): #True
     
     if(seleccion==0):
         index = index+1
-       
         print(f"El total de venta del dia es: {Fore.RED} {v_diaria} {Style.RESET_ALL}")
         print(f"La cantidad de ventas en el dia fueron de: {cantidad}\n ")
         print("El detalle de las ventas son las siguientes")
@@ -40,10 +38,7 @@ while(index==0): #True
             print(f"El rut del ususario es : {i[1]}")
             print(f"La totalidad de kilos a comprar es de : {i[3]}")
             print(f"El  valor total del cliente {i[0]}, es de {Fore.GREEN} {i[4]}  {Style.RESET_ALL}\n")
-            print("--------------------------------------------------")
-        
-        
-        
+            print("--------------------------------------------------") 
     else:
         
         index = 0
